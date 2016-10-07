@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <title>country capital</title>
+        <style>
+            body{
+                background-color:#7799BB;
+            }
+        </style>
+		<script >
+			function check() { 
+				var cap = parseInt(form1.capital.value);
+				var coun = parseInt(form1.country.selectedIndex);
+				
+				if(coun==-1)
+					alert("choose a country name");
+				else if(coun==cap)
+					form1.txt.value= "correct answer";
+					
+				else{
+					alert("wrong answer");
+					coun=coun+"";
+					form1.txt.value= "correct answer is:" + document.getElementById(coun).innerHTML;
+                }			
+            }
+		</script>
+    </head>
+    <BODY> 
+        		<CENTER> 
+       			 <br><br> 
+       			 
+        			<BR><BR><BR><BR> 
+        			<form name="form1"> 
+            				<select name="country" size="5"> 
+                    				<option value="0">india</option>
+									<option value="1">china</option>
+									<option value="2">US </option>
+									<option value="3">pakistan </option>
+									<option value="4">australia </option>
+					
+                			</select> 
+        				&nbsp&nbsp&nbsp
+        				&nbsp&nbsp&nbsp
+            				<select name="capital" size="5" onchange="check()"> 
+               					<option id="1" value="1"> beijing</option>
+								<option id="2" value="2">washington </option>
+								<option id="4" value="4">canaberra</option>
+								<option id="0" value="0">delhi </option>
+								<option id="3" value="3">islamabad </option>
+					
+                			</select> 
+        				<br> <br><br> Result:
+        					<input type="text" name="txt" size="60"><BR><BR> 
+        					<input type=reset value="RESET"> 
+   			 </FORM> 
+		</center>
+  	</BODY>
+</html>

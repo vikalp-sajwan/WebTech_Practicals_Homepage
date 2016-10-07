@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+    <head>
+        <title>change</title>
+        <style>
+            body{
+                background-color:#7799BB;
+            }
+        </style>
+		<script >
+			var i=0;
+			function changeIt(){
+			//alert("within changeit");
+				if(i>4)
+				i=0;
+				
+				if (i == 0)
+					document.body.style.backgroundColor = "#335007";
+				else if (i == 1)
+					document.body.style.backgroundColor = "#443688";
+				else if (i == 2)
+					document.body.style.backgroundColor = "#117799";
+				else if (i == 3)
+					document.body.style.backgroundColor = "#6CD8AA";
+				else 
+					document.body.style.backgroundColor = "#89AB23";
+                        
+				i++;
+			}
+			function timeIt() {
+				//alert("within timeit");
+				   setInterval("changeIt()",1000);
+			}
+		</script>
+    </head>
+    
+    <body onload="timeIt()">
+		
+    </body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+	<head>
+		<script>
+			function enablebutton(){
+     				if(f1.chkburger.checked==true)
+					f1.b1.disabled=false;
+				if(f1.chkspring.checked==true)
+					f1.b1.disabled=false;
+				if(f1.chkpizza.checked==true)
+					f1.b1.disabled=false;
+			}
+
+			function cal(){
+				var amt=0;
+				if(f1.chkburger.checked==true)
+					amt=amt+parseInt(document.f1.chkburger.value);
+				if(f1.chkspring.checked==true)
+					amt=amt+parseInt(document.f1.chkspring.value);
+				if(f1.chkpizza.checked==true)
+					amt=amt+parseInt(document.f1.chkpizza.value);
+
+				if(document.getElementById("cash").checked==true)
+					amt=amt*0.5;
+				else
+					amt=amt*0.90;
+
+				f1.result.value=amt;
+			}
+
+		</script>	
+	</head>
+
+	<body>
+		<center>
+			<h2 id="heading2">ONline order form</h2>
+		</center>
+		<form name="f1">
+		<input type="checkbox" name="chkburger" value="20" onclick="enablebutton()">burger 20/-
+		<br>
+		<input type="checkbox" name="chkspring" value="60" onclick="enablebutton()">Spring roll 60/-
+		<br>
+		<input type="checkbox" name="chkpizza" value="120" onclick="enablebutton()">pizza 120/-
+		<br>
+		<input type="radio" name="payoption" id="cash" value="cash" checked>cash
+		<br>
+		<input type="radio" name="payoption" id="credit" value="credit" checked>cash
+		<br>
+		<input type="button" name="b1" value="calculate bill" onclick="cal()" disabled>
+		<br><br>
+		<input type="text" name="result" disabled)>
+		<input type ="reset">
+	</body>
+</html>

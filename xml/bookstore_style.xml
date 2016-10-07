@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="bookstore.css"?>
+<!DOCTYPE bookstore [
+<!ELEMENT bookstore (title,author_name,ISBN_no,publisher_name,edition,price)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT author_name (#PCDATA)>
+<!ELEMENT ISBN_no (#PCDATA)>
+<!ELEMENT publisher_name (#PCDATA)>
+<!ELEMENT edition (#PCDATA)>
+<!ELEMENT price (#PCDATA)>
+]>
+<bookstore>
+	<book>
+		<title>Game Of Thrones</title>
+		<author_name>George R.R. Martin</author_name>
+		<ISBN_no>4230</ISBN_no>
+		<publisher_name>Voyage Publishers</publisher_name>
+		<edition>2013</edition>
+		<price>499.00</price>
+	</book>
+	
+	<book>
+		<title>Animal Farm</title>
+		<author_name>George Orwell</author_name>
+		<ISBN_no>8265</ISBN_no>
+		<publisher_name>Penguin Publishers India</publisher_name>
+		<edition>2012</edition>
+		<price>99.00</price>
+	</book>
+	
+	<book>
+		<title>The Alchemist</title>
+		<author_name>Paolo Coelho</author_name>
+		<ISBN_no>9564</ISBN_no>
+		<publisher_name>Harper Publishers</publisher_name>
+		<edition>2014</edition>
+		<price>299.00</price>
+	</book>
+</bookstore>

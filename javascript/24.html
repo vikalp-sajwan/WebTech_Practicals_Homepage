@@ -1,0 +1,45 @@
+<html>
+<head>
+</style>
+</head>
+<body>
+<script>
+function Validate()
+{
+  var RE_EMAIL=/^(\w+[\-\.])*\w+@(\w+\.)+[A-Za-z]+$/
+  var RE_PASSWORD=/^[\w]{6,8}$/;
+  if(f1.tf1.value=="")
+  {
+    alert("User-Name Cannot Be Empty");
+  }
+  else if(f1.tf2.value=="")
+  {
+    alert("PASSWORD Cannot Be Empty");
+  }
+  else if(!RE_EMAIL.test(f1.tf1.value))
+  {
+    alert("YOU MUST ENTER A VALID E-MAIL ID");
+    f1.tf1.focus();
+  }
+  else if(!RE_PASSWORD.test(f1.tf2.value))
+  {
+    alert("YOU MUST ENTER A VALID PASSWORD");
+    f1.tf2.focus();
+  }
+    
+  else if(f1.tf1.value=="itsvikalp@gmail.com" && f1.tf2.value=="vikalp")
+  {
+    alert("Successfully submitted");
+  }
+    else
+        alert("wrong email or password");
+}
+</script>
+<h2 align=center>Form Validation</h2>
+<form name="f1">
+Email:<input type="text" name="tf1" placeholder="Eg xyz@xya.com"><br><br>
+Password:<input type="password" name="tf2" placeholder="Must be valid number"><br><br>
+<input type="submit" value="Submit" onclick="Validate();">
+</form>
+</body>
+</html>

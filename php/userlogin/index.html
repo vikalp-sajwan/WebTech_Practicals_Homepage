@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Dynamic user login</title>
+    <style>table{
+        border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+<script>
+function Validate()
+{
+  if(f1.username.value=="")
+  {
+    alert("User-Name Cannot Be Empty");
+      f1.username.focus();
+      return false;
+  }
+  else if(f1.password.value=="")
+  {
+    alert("PASSWORD Cannot Be Empty");
+      f1.password.focus();
+      return false;
+  }
+}
+</script>
+<h2 align=center>User Login</h2>
+<form name="f1" action="http://localhost/userlogin/verifyemail.php" method="post" onsubmit="return Validate();">
+    <table>
+<tr><td>Username:</td><td><input type="text" name="username" ></td></tr>
+<tr><td>Password:</td><td><input type="password" name="password"></td></tr>
+    <tr><td><input type="submit" value="Submit"></td></tr>
+        </table>
+</form>
+</body>
+</html>

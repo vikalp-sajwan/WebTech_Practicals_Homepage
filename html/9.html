@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <title>Customer Registration Form</title>
+    </head>
+    <body>
+        <p align= right>8:32 PM 23/02/2016 </p>
+        <CENTER><H1>HOTEL NEW CASTLE</H1></CENTER>
+        <form name="Registration form" >
+            <fieldset>
+                <legend>NEW CUSTOMER REGISTRATION</legend>
+                <br>
+                <table>
+                    <tr>
+                        <td>
+                            Full name: *
+                        </td>
+                        <td>
+                            <input type="text" placeholder="enter your name" size="25" required>
+                        </td>
+                    </tr>
+                     <tr>
+                         <td>
+                             Address:
+                         </td>
+                         <td> 
+                             <textarea name="address" placeholder="enter your address" rows="3"></textarea>
+                         </td>
+                    </tr>
+                     
+                    <tr>
+                        <td>
+                            Age: *
+                        </td>
+                        <td>
+                            <input type="number" required min="18" max="120">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Gender:
+                        </td>
+                        <td>
+                            <input type="radio" name="gender" value="male" checked>
+                            male
+                            <input type="radio" name="gender" value="female">
+                            female
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Room Type:</td>
+                        <td>
+                            <select name="roomtype">
+                            <option value="nac" selected>Non AC Room</option>
+                            <option value="ac" >AC Room</option>
+                            <option value="deluxe" >Deluxe Room</option>
+                            </select>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>
+                            Payment Type:
+                        </td>
+                        <td>
+                            <input type="radio" name="payment" value="cash" checked>
+                            Cash
+                            <input type="radio" name="payment" value="card">
+                            Credit card/Debit card
+                            <input type="radio" name="payment" value="coupon">
+                            Coupon
+                        </td>
+                    </tr>
+                    
+                </table>
+            <br>
+            <br>
+            <input type=submit value="Register">
+            <input type=reset value="Reset form">
+        </form>
+    </body>
+</HTML>

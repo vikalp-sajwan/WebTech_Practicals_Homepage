@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<HTML>
+    <head>
+        <title>Demonstration of form elements</title>
+    </head>
+    <body>
+        <p align= right>8:20 PM 23/02/2016 </p>
+        <form name="form1" >
+            <fieldset>
+                <legend>Personal Information</legend>
+                Full name: *<input type="text" placeholder="enter your name" required>
+                <br><br>
+                Birth Date: *<input type="date" required>
+                <br><br>
+                Gender
+                <input type="radio" name="gender" checked>
+                male
+                <input type="radio" name="gender">
+                female
+                <br><br>
+                Address <textarea name="address" placeholder="enter your address" cols="50" rows="5"></textarea>
+                <br><br>
+                Phone No.<input type="text" pattern="^[0-9]{4}[/-]{1}[0-9]{7}$">
+            </fieldset>
+            <fieldset>
+                <legend>Extra Information</legend>
+                Interests
+                <input type="checkbox" name="interest">
+                Books
+                <input type="checkbox" name="interest">
+                Movies
+                <input type="checkbox" name="interest">
+                VideoGames
+                <br><br>
+                Likes
+                <select name="likes" value="likes">
+                <option value="games" selected>games</option>
+                <option value="movies" >movies</option>
+                </select>
+                Dislikes
+                <select name="dislikes" value="dislikes">
+                <option value="songs" selected>songs</option>
+                <option value="daily soap">daily soap</option>
+                </select>
+                <br><br>
+                Favourite Color
+                <input type="color" name="color">
+            </fieldset>
+            <br>
+            <input type=submit value="Send data">
+            <input type=reset value="Reset form">
+        </form>
+    </body>
+</HTML>

@@ -1,0 +1,18 @@
+<?xml version = '1.0'?> 
+<employee>
+<dept>
+<dno> 1 </dno> 
+<dname> management </dname>
+<location> dehradun </location>
+</dept>
+<dept>
+<dno> 2 </dno> 
+<dname> finance </dname>
+<location> delhi </location>
+</dept>
+<dept>
+<dno> 3 </dno> 
+<dname> R and D </dname>
+<location> mumbai </location>
+</dept>
+</employee>
